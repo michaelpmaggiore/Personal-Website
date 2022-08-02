@@ -1,0 +1,12 @@
+body{
+    background-color: white;
+    color: #575757; /* Experiment between a black and light grey color */
+    font-family: nobel, sans-serif;
+    font-size: normal;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
