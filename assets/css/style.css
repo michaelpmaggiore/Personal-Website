@@ -10,3 +10,15 @@ body{
     padding: 0;
 }
 
+/* Navigation bar */
+#navbar {
+    left: 0%;
+    right: 0%;
+    background-color: white;
+    top: -70px;
+    display: block;
+    transition: top 0.4s;
+    position: fixed;
+    box-shadow: 2px 2px 5px #aaa;
+    z-index: 1;
+}
