@@ -56,3 +56,22 @@ body{
     transform-origin: 0% 50%; /* Set 0 to 50 to start transition at mid */
     transition: 350ms ease-in-out;
 }
+
+/* Home Page */
+#home-section {
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#landing-container {
+    padding-right: 4%;
+}
+
+#landing-text {
+    max-width:90%;
+    text-align: center;
+}
