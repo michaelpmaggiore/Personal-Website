@@ -18,10 +18,10 @@
         <link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
-        <!--Plugins-->
-        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-        <script src="assets/scripts/scripts.js"></script>
-
+        <!--External files-->
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" defer></script>
+        <script src="assets/scripts/scripts.js" defer></script>
+    
         <!--Global site tag (gtag.js) - Google Analytics-->
         <!--Learn how to set up google analytics!-->
 
@@ -30,13 +30,13 @@
 
         <!--Navigation Bar-->
         <div id="navbar">
-            <a href="#home-section" class="navbar-item">MICHAEL MAGGIORE</a>
-            <a href="#award-section" class="navbar-item">AWARDS</a>
-            <a href="#publication-section" class="navbar-item">PUBLICATIONS</a>
-            <a href="#project-section" class="navbar-item">PROJECTS</a>
-            <a href="#education-section" class="navbar-item">EDUCATION</a>
-            <a href="#about-section" class="navbar-item">ABOUT</a>
-            <a href="#contact-section" class="navbar-item">CONTACTS</a>
+            <a href="#home-section" class="navbar-item">Michael Maggiore</a> <!--Test between lower case and upper case combinations-->
+            <a href="#footer-section" class="navbar-item">Contacts</a>
+            <a href="#award-section" class="navbar-item">Awards</a>
+            <a href="#publication-section" class="navbar-item">Publications</a>
+            <a href="#project-section" class="navbar-item">Projects</a>
+            <a href="#education-section" class="navbar-item">Education</a>
+            <a href="#about-section" class="navbar-item">About</a>
             <!-- When Decreasing screen size, make sure nav bar sections are looking good -->
         </div>
 
@@ -46,17 +46,79 @@
             <section id="home-section">
                 <div class="container row">
                     <div class="container row" id="landing-container">
-                        <img src="assets\img\DSC02845smaller.jpg" id="profile-icon" alt="Profile Picture">
+                        <img src="assets\img\DSC02701SMALL.jpg" id="profile-icon" alt="Profile Picture">
                         <div class="container column" id="landing-text">
-                            <h1 class="title">MICHAEL MAGGIORE</h1>
+                            <h1 class="title">Michael Maggiore</h1>
                             <p id="app"></p>
                         </div>
                     </div>
-                    <a href="#about-section" class="arrow"></a>
+                    <a href="#about-section" id="arrow"></a>
                 </div>
             </section>
 
-        </div>
+            <!--About Section-->
+            <section class="container column" id="about-section">
 
+            </section>
+
+            <!--Education Sectiion-->
+            <section class="container column parallax" id="education-section">
+                <div class="container column" id="text">
+                    <h1 class="subtitle">Education</h1>
+                    <div class="container row" id="education-title">
+                        <img src="assets\img\Colorado_School_of_Mines_seal.svg.png">
+                        <div class="container column" id="school">
+                            <h2>Colorado School of Mines</h2>
+                            <h3>B.S. - Computer Science, Robotics and Intelligent Systems</h3>
+                            <p>Expected Graduation: May 2025</p>
+                        </div>
+                    </div>
+                    <div class="container column" id="coursework">
+                        <h4>Relevant Coursework:</h4>
+                        <p>Computer Science</p>
+                        <ul>
+                            <li>Foundational Programming Concepts and Design (CSCI 200)</li>
+                            <li>Data Structures & Algorithms (CSCI 220)</li>
+                            <li>Introduction to the Linux Operating System (CSCI 274)</li>
+                            <li>Introduction to Data Science (CSCI 303)</li>
+                            <li>Computer Organization (CSCI 341)</li>
+                            <li>Database Management (CSCI 403)</li>
+                            <li>Software Engineering (CSCI 306)*</li>
+                            <li>Discrete Mathematics (CSCI 358)*</li>
+                            <li>Artificial Intelligence (CSCI 404)*</li>
+                        </ul>
+                        <p>Mathematics</p>
+                        <ul>
+                            <li>Probability and Statistics for Engineers (MATH 201)</li>
+                            <li>Linear Algebra (MATH 332)*</li>
+                        </ul>
+                        <p>Other</p>
+                        <li>Introduction to Electrical Circuits (EENG 281)*</li>
+
+                        <p id="progress">*upcoming Sophomore courses</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Project Section-->
+            <section class="container column" id="project-section">
+
+            </section>
+
+            <!--Publication Section-->
+            <section class="container column" id="publication-section">
+
+            </section>
+
+            <!--Award Section-->
+            <section class="container column" id="award-section">
+
+            </section>
+
+            <!--Footer/Contacts-->
+            <section class="container column" id="footer-section">
+
+            </section>
+        </div>
     </body>
 </html>

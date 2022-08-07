@@ -1,7 +1,7 @@
-body{
+body, html{
     background-color: white;
     color: #575757; /* Experiment between a black and light grey color */
-    font-family: nobel, sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: normal;
     width: 100%;
     height: 100%;
@@ -11,15 +11,19 @@ body{
 }
 
 h1 {
-    font-family: nobel, sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     font-style: normal;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 p {
     margin-top: 2%;
     margin-bottom: 2%;
-    font-family: nobel, sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
@@ -87,6 +91,13 @@ p {
     font-size: 350%;
     margin-top: 5%;
     margin-bottom: 2%;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.subtitle {
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-size: 175%;
 }
 
 .container {
@@ -111,6 +122,7 @@ p {
 
 #landing-container {
     padding-right: 4%;
+    /* position: fixed; */
 }
 
 #landing-text {
@@ -139,7 +151,7 @@ p {
     -webkit-transform: rotate(45deg);
 }
 
-.arrow:hover {
+#arrow:hover {
     -webkit-animation-play-state: paused;
     opacity: 60%;
     transform: scale(1.25) rotate(45deg);
@@ -155,4 +167,91 @@ p {
     60% {
         transform: translateY(-15px) rotate(45deg);
     }
+}
+
+
+/* About section */
+#about-section {
+    padding: 50px;
+    background-color: #F0F0F0;
+    min-height: 100vh;
+}
+
+/* Education Section */
+#education-section {
+    padding: 50px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+    background-color: #474d5a;
+}
+
+#text .subtitle {
+    margin-bottom: 40px;
+}
+
+#education-section * {
+    color:white;
+}
+
+#education-title img {
+    width: 115px; /*think between width 115px and 120px;*/
+    margin-top: 6px;
+}
+
+#school {
+    align-items: flex-start;
+}
+
+#school p {
+    font-size: 14px;
+}
+
+#school * {
+    margin: 8px;
+}
+
+#coursework {
+    align-items: flex-start;
+    font-size: 120%;
+}
+
+li {
+    margin: 5px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+#progress {
+    font-size: 80%;
+}
+
+/* Project Section */
+#project-section {
+    padding: 50px;
+    /* background-color: #F0F0F0; */
+    min-height: 100vh;
+}
+
+/* Publication Section */
+#publication-section {
+    padding: 50px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+    background-color: #474d5a;
+}
+
+/* Award Section */
+#award-section {
+    padding: 50px;
+    background-color: #F0F0F0;
+    min-height: 100vh;
+}
+
+/* Footer Section */
+#footer-section {
+    height: 6em;
+    text-align: center;
+    background-color: #474d5a;
 }
