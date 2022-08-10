@@ -13,19 +13,19 @@ typewriter.typeString('Hey there!') // Maybe capitalize the sentences?!
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString('Nice to meet you.')
+    .typeString('Nice to meet you')
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("My name is Michael.")
+    .typeString("My name is Michael")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("I'm a student at Colorado School of Mines (sko digs!).")
+    .typeString("I'm a student at Colorado School of Mines (sko digs!)")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("I'm studying computer science with a statistics minor.")
+    .typeString("I'm studying computer science with a statistics minor")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
@@ -33,11 +33,11 @@ typewriter.typeString('Hey there!') // Maybe capitalize the sentences?!
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("Huge fan of star wars.")
+    .typeString("Huge fan of star wars")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("I also like to swim.")
+    .typeString("I also like to swim")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
@@ -54,6 +54,10 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "0";
   } else {
     document.getElementById("navbar").style.top = "-70px";
+  }
+
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+    document.getElementById("home-section").style.
   }
 }
 
