@@ -32,8 +32,8 @@
         <!--Navigation Bar-->
         <div id="navbar">
             <a href="#home-section" class="navbar-item">Michael Maggiore</a> <!--Test between lower case and upper case combinations-->
-            <a class="navbar-item">Resume</a>
-            <!-- <a href="#footer-section" class="navbar-item">Contacts</a> -->
+            <a class="navbar-item contactSpacing" >Resume</a>
+            <a href="#footer-section" class="navbar-item">Contact</a>
             <!-- <a href="#award-section" class="navbar-item">Awards</a> -->
             <!-- <a href="#publication-section" class="navbar-item">Publications</a> -->
             <a href="#project-section" class="navbar-item">Projects</a>
@@ -104,7 +104,56 @@
 
             <!--Project Section-->
             <section class="container column" id="project-section">
+                <h1 class="subtitle">Projects</h1>
 
+                <!--Filter Buttons-->
+				<div class="contianer row" id="button-section">
+					<button class="filter-button active" onclick="filterSelection('all')">All</button>
+					<!-- <button class="filter-button" onclick="filterSelection('python')">Python</button> -->
+					<button class="filter-button" onclick="filterSelection('data')">Data</button>
+					<button class="filter-button" onclick="filterSelection('c++')">C++</button>
+					<button class="filter-button" onclick="filterSelection('web')">Web Dev</button>
+				</div>
+
+                <!--Individual Projects-->
+                <div class="container row" id="project-container">
+                    <div class="each-project data">
+                        <img class="proj-img" src="assets\img\StocksPhoto2.png">
+                        <div class="proj-description container column">
+                            <div class="img-description">
+                                <h2>Stocks</h2>
+                                <p>Woah</p>
+                                <br>
+                                <br>
+                                <i>Python</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="each-project c++">
+                        <img class="proj-img" src="assets\img\websitephoto.png">
+                        <div class="proj-description container column">
+                            <div class="img-description">
+                                <h2>Stocks</h2>
+                                <p>Woah</p>
+                                <br>
+                                <br>
+                                <i>Python</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="each-project web">
+                        <img class="proj-img" src="assets\img\StocksPhoto2.png">
+                        <div class="proj-description container column">
+                            <div class="img-description">
+                                <h2>Stocks</h2>
+                                <p>Woah</p>
+                                <br>
+                                <br>
+                                <i>Python</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--Publication Section-->
@@ -119,7 +168,16 @@
 
             <!--Footer/Contacts-->
             <section class="container column" id="footer-section">
-
+                <div class="container row" id="social-container">
+                    <a href="https://www.linkedin.com/in/michaelpmaggiore/" target="_blank">LinkedIn</a>
+					<span>•</span>
+                    <a href="https://github.com/michaelpmaggiore" target="_blank">Github</a>
+					<span>•</span>
+                    <a href="mailto:michaelpmaggiore@gmail.com" target="_blank">Email</a>
+                </div>
+                <div>
+                    <p id="copyright">Coded by Michael 2022</p>
+                </div>
             </section>
         </div>
     </body>
