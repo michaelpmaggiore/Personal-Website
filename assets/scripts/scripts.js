@@ -121,3 +121,18 @@ for (var i = 0; i < btns.length; i++) {
     console.log(current);
   });
 }
+
+// // Reveals website.
+// window.sr = ScrollReveal({
+//   reset: false,
+//   duration: 600,
+//   easing: 'cubic-bezier(.694,0,.335,1)',
+//   scale: 1,
+//   viewFactor: 0.3,
+// });
+
+// sr.reveal('.home-section');
+// sr.reveal('.about-section');
+// // sr.reveal('.experience', { viewFactor: 0.2 });
+// // sr.reveal('.featured-projects', { viewFactor: 0.1 });
+// sr.reveal('.project-section', { viewFactor: 0.05 });
