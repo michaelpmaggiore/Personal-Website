@@ -25,7 +25,7 @@ typewriter.typeString('Hey there!') // Maybe capitalize the sentences?!
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("I'm studying computer science with a statistics minor")
+    .typeString("I'm studying computer science with a focus in Robotics and AI")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
