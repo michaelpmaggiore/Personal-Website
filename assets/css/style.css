@@ -20,6 +20,12 @@ h2 {
     font-size: 30px;
 }
 
+h3 {
+    font-size: 34px;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
 p {
     margin-top: 2%;
     margin-bottom: 2%;
@@ -28,15 +34,16 @@ p {
     font-style: normal;
 }
 
-p2 {
+.img-description p2 {
     margin-top: 2%;
     margin-bottom: 2%;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 29px;
+    /* padding-top: 1px; */
+    padding-bottom: 5px;
+    display: block;
 }
 
 a {
