@@ -28,6 +28,17 @@ p {
     font-style: normal;
 }
 
+p2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 a {
     text-decoration: none;
 	color: #575757;
@@ -203,7 +214,7 @@ a:hover {
 	box-shadow: 12px 12px 1px #bfbfc2;
 	overflow-y:hidden;
 	margin: 40px;
-	margin-top: 20px;
+	margin-top: -20px;
     margin-left: 0px;
 }
 
@@ -333,6 +344,15 @@ ul {
 	display: none;
 }
 
+.each-project2 {
+	position: relative;
+    height: 450px;
+    width: 450px;
+	margin: 1%;
+    margin-right: 30px;
+	display: none;
+}
+
 .show {
 	display: block;
   }
@@ -357,10 +377,16 @@ ul {
 	align-items: center;
 	justify-content: center;
 	transition: opacity .4s, visibility .4s;
+    z-index: 100;
 }
 
-.each-project:hover .proj-description {
+.each-project:hover .proj-description{
 	visibility: visible;
+	opacity: 0.9;
+}
+
+.each-project2:hover .proj-description{
+    visibility: visible;
 	opacity: 0.9;
 }
 

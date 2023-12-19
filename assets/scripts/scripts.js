@@ -92,6 +92,9 @@ function filterSelection(c) {
   }
 }
 
+x = document.getElementsByClassName("each-project2");
+w3AddClass(x[0], "show")
+
 function w3AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
