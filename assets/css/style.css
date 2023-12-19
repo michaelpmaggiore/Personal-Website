@@ -48,7 +48,7 @@ a:hover {
     transition: top 0.4s;
     position: fixed;
     box-shadow: 2px 2px 5px #aaa;
-    z-index: 1;
+    z-index: 100;
 }
 
 .navbar-item:first-child {
@@ -137,7 +137,7 @@ a:hover {
 
 #landing-container {
     padding-right: 4%;
-    padding-left: 4%;
+    /* padding-left: 4%; */
 
     /* position: fixed; */
 }
@@ -164,6 +164,7 @@ a:hover {
     transition: 0.3s;
     animation: bounce 3s infinite;
     margin: 20px;
+    margin-top: 40px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
@@ -190,6 +191,7 @@ a:hover {
 /* About section */
 #about-section {
     padding: 50px;
+    padding-top: 10px;
     background-color: #F0F0F0;
     min-height: 100vh;
 }
@@ -199,6 +201,18 @@ a:hover {
 	border-radius: 4px;
 	border-top: 20px solid #e5e5e5;
 	box-shadow: 12px 12px 1px #bfbfc2;
+	overflow-y:hidden;
+	margin: 40px;
+	margin-top: 20px;
+    margin-left: 0px;
+}
+
+#about-img-left {
+	height: 650px;
+    width: 650px;
+	border-radius: 4px;
+	border-top: 20px solid #e5e5e5;
+	box-shadow: -12px 12px 1px #bfbfc2;
 	overflow-y:hidden;
 	margin: 40px;
 	margin-top: 20px;
@@ -437,4 +451,14 @@ ul {
 	100% {
 		opacity: 1;
 	}
+}
+
+.test2 {
+    position: relative;
+}
+
+.test {
+    position: absolute;
+    height: 650px;
+    width: 650px;
 }
