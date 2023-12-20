@@ -20,7 +20,7 @@ h2 {
     font-size: 30px;
 }
 
-h3 {
+h5 {
     font-size: 34px;
     margin: 0px;
     margin-bottom: 15px;
@@ -66,7 +66,7 @@ a:hover {
     transition: top 0.4s;
     position: fixed;
     box-shadow: 2px 2px 5px #aaa;
-    z-index: 100;
+    z-index: 10000;
 }
 
 .navbar-item:first-child {
@@ -131,6 +131,16 @@ a:hover {
     letter-spacing: 2px;
     max-width: 100%;
     font-size: 175%;
+    margin-top: 70px;
+    margin-bottom: 20px !important;
+}
+
+.subtitle2 {
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-size: 175%;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 .container {
@@ -213,7 +223,12 @@ a:hover {
     background-color: #F0F0F0;
     min-height: 100vh;
 }
-
+#about-section2 {
+    padding: 50px;
+    padding-top: 0px;
+    background-color: #F0F0F0;
+    min-height: 40vh;
+}
 #about-img {
 	height: 450px;
 	border-radius: 4px;
@@ -237,23 +252,17 @@ a:hover {
     margin-left: 0px;
 }
 
-/* #about-img:hover {
-	border-top: 20px solid #e5e5e5;
-	box-shadow: 12px 12px 1px #bfbfc2;
-} */
-
 #about-section-description {
-    /* margin: 40px; */
-	margin-top: 196px;
-    margin-bottom: 150px;
     margin-right: 10px;
     margin-left: 0px;
-	padding: 30px;
-	overflow-y:auto;
-	line-height: 22px;
-	height: 500px;
-	width: 515px;
-    /* background-color: #2a2d34; */
+    padding: 30px;
+    padding-top: 60px;
+    overflow-y: auto;
+    line-height: 22px;
+    height: 500px;
+    min-height: 500px;
+    min-width: 500px;
+    width: calc(100% - 1189px); /* Adjust width */
     font-size: 21px;
     line-height: 2em;
 }
@@ -272,6 +281,10 @@ a:hover {
 }
 
 #text .subtitle {
+    margin-bottom: 40px;
+}
+
+#text .subtitle2 {
     margin-bottom: 40px;
 }
 
@@ -358,6 +371,7 @@ ul {
 	margin: 1%;
     margin-right: 30px;
 	display: none;
+    /* margin-bottom: 50px; */
 }
 
 .show {
