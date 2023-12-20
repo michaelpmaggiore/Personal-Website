@@ -293,7 +293,7 @@ a:hover {
 }
 
 #education-title img {
-    width: 115px; /*think between width 115px and 120px;*/
+    width: 136px; /*think between width 115px and 120px;*/
     margin-top: 6px;
 }
 
@@ -320,6 +320,14 @@ li {
 
 ul {
     list-style-type: circle;
+}
+
+#coursework ul{
+    margin-top: 0px;
+}
+
+#coursework p{
+    margin-top: 0px;
 }
 
 #progress {
