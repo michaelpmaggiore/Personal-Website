@@ -131,7 +131,7 @@ function scrollFunction() {
   fadeInElement("coursework", 1400, 0, 600);
 
   fadeInElement("fade-in-element1", 2500, 1, 200);
-  fadeInElement("button-section", 2500, 2, 200);
+  // fadeInElement("button-section", 2500, 2, 200);
 
   fadeInElement("fade-in-element2", 2800, 3, 200);
   fadeInElement("fade-in-element3", 2800, 3, 400);
@@ -141,9 +141,9 @@ function scrollFunction() {
   fadeInElement("fade-in-element6", 3100, 3, 1000);
   fadeInElement("fade-in-element7", 3100, 3, 1200);
 
-  fadeInElement("fade-in-element8", 3300, 3, 1200);
-  fadeInElement("fade-in-element9", 3300, 3, 1400);
-  fadeInElement("fade-in-element10", 3300, 3, 1600);
+  fadeInElement("fade-in-element8", 3400, 3, 800);
+  fadeInElement("fade-in-element9", 3400, 3, 1000);
+  fadeInElement("fade-in-element10", 3400, 3, 1200);
 
 
 }
