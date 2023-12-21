@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+
         <title>Michael Maggiore | Portfolio</title>
 
         <!--Meta-->
@@ -9,12 +9,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <!--Change initial scale when viewing app on phone!-->
-        <meta name="keywords" content="Michael Maggiore, Colorado School of Mines">
+        <meta name="keywords" content="Michael Maggiore Colorado School of Mines">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"> 
         <meta name="description" content="I'm Michael and welcome to my personal website! I am currently studying Computer Science at Colorado School of Mines. Shoot me a message if you want to chat!">
         
         <!--CSS-->
-        <link rel="stylesheet" href = "assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css">
         <link rel="icon" href="assets/img/michaelPose2Icon.png">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -32,96 +32,88 @@
 
             gtag('config', 'G-7S5YEMGKTF');
         </script>
+
     </head>
 
     <body>
 
         <!--Navigation Bar-->
         <div id="navbar">
-            <a href="#home-section" class="navbar-item" id="toHomeSection">Michael Maggiore</a> <!--Test between lower case and upper case combinations-->
-            <a class="navbar-item contactSpacing" href="/Resume/Michael_Maggiore_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="#home-section" class="navbar-item" id="toHomeSection">Michael Maggiore</a>
+            <a class="navbar-item resumeSpacing" href="/Resume/Michael_Maggiore_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             <a href="#footer-section" class="navbar-item">Contact</a>
-            <!-- <a href="#award-section" class="navbar-item">Awards</a> -->
-            <!-- <a href="#publication-section" class="navbar-item">Publications</a> -->
             <a href="#project-section" class="navbar-item">Projects</a>
             <a href="#education-section" class="navbar-item">Education</a>
             <a href="#about-section" class="navbar-item">About</a>
-            <!-- When Decreasing screen size, make sure nav bar sections are looking good -->
         </div>
 
         <div class="page-content">
 
             <!--Home Page-->
             <section id="home-section">
-
-                <div class="container row fade-in" id="fade-in-element0">
-
+                <div class="container row fade-in" id="home-fade">
                     <div class="container row" id="landing-container">
-                        <div class="test2" id="about-img-left">
-                            <img src="assets\img\michael.jpg" id=""  class="test" alt="Photo">            
-                            <img src="assets\img\14er.JPG" id=""  class="test" alt="Photo">
-                            <img src="assets\img\ascend.JPG" id=""  class="test" alt="Photo">
-                            <img src="assets\img\caci.jpeg" id=""  class="test" alt="Photo"> 
-                            <img src="assets\img\moab.JPG" id=""  class="test" alt="Photo">                                               
-                            <img src="assets\img\keyboardTeamOutside.jpg" id=""  class="test" alt="Photo">            
 
+                        <!-- Holds all home page images -->
+                        <div class="home-image-container">
+                            <img src="assets\img\michael.jpg" class="home-image" alt="Photo1">            
+                            <img src="assets\img\14er.JPG" class="home-image" alt="Photo2">
+                            <img src="assets\img\ascend.JPG" class="home-image" alt="Photo3">
+                            <img src="assets\img\caci.jpeg" class="home-image" alt="Photo4"> 
+                            <img src="assets\img\moab.JPG" class="home-image" alt="Photo5">                                               
+                            <img src="assets\img\keyboardTeamOutside.jpg" class="home-image" alt="Photo6">            
                         </div>  
                         <div class="container column" id="landing-text">
                             <h1 class="title">Michael Maggiore</h1>
+
+                            <!-- Generates typewriter -->
                             <p id="app"></p>
                         </div>
                     </div>
-                    <a href="#about-section" id="arrow"></a>
 
+                    <!-- Creates arrow -->
+                    <a href="#about-section" id="arrow"></a>
                 </div>
             </section>
 
             <!--About Section-->
             <section class="container column" id="about-section"> 
-                <h1 class="subtitle fade-in" id="fade-in-element0.5">About Me</h1>
+                <h1 class="subtitle fade-in" id="about-title">About Me</h1>
 
-                <section class="container row" id="about-section2">
-    
-                    <div id="about-section-description" class="fade-in">
+                <section class="container row" id="about-desc-and-image">
+                    <div id="about-desc" class="fade-in">
                         <p>
                             Hello! My name is Michael and I love building software that has a real impact on the world. My interest in programming began from my very first "Hello, World!" and continues to grow as I begin to build new web applications and programs that push the boundaries of creativity.
                         </P>
-                        <p class="break-margin">
-                        </p>
+                        <p class="break-margin"></p>
                         <p>
                             Fast-forward to today, I've had the privilege of working on many jobs and projects from researching new ways to safeguard IoT data to developing and deploying exciting programs on company apps.
                         </p>
                     </div>
-                    <div class="each-project2 fade-in" id="fade-in-element0.7">
+                    <div class="about-image-container fade-in" id="about-image-container">
                         <img src="assets/img/michaelPose1.JPG" id="about-img" alt="Profile Picture"> 
                         <div class="proj-description container column">
                             <div class="img-description">
                                 <h5>Hobbies and Interests!</h5>
-    
                                 <p2> ~ Content Creation ~ </p2>
                                 <p2> ~ Waterpolo & Swimming ~ </p2>
                                 <p2> ~ 14ers & Hiking ~ </p2>
                                 <p2> ~ Classical Music ~ </p2>
                                 <p2> ~ Teaching ~ </p2>
                                 <p2> ~ Sacristan ~ </p2>
-    
                             </div>
                         </div>    
                     </div>
-           
-    
                 </section>
             </section>
-                
-            
 
             <!--Education Section-->
             <section class="container column parallax" id="education-section">
                 <div class="container column">
-                    <h1 class="subtitle fade-in" id="fade-in-element2.1">Education</h1>
-                    <div class="container row" id="education-title">
-                        <img class="fade-in" id="fade-in-element2.2" src="assets\img\Colorado_School_of_Mines_seal.svg.png">
-                        <div class="container column fade-in" id="school">
+                    <h1 class="subtitle fade-in" id="education-title">Education</h1>
+                    <div class="container row fade-in" id="education-college-container">
+                        <img src="assets\img\Colorado_School_of_Mines_seal.svg.png">
+                        <div class="container column" id="school">
                             <h2>Colorado School of Mines</h2>
                             <h3>Master of Science - Computer Science, Non-Thesis</h3>
                             <p>Expected Master's Graduation: May 2025</p>
@@ -150,7 +142,6 @@
                             <li>Programming Languages (CSCI 400)*</li>
                             <li>Algorithms (CSCI 406)*</li>
                             <li>Web Applications (CSCI 446)*</li>
-
                         </ul>
                         <p>Mathematics</p>
                         <ul>
@@ -158,7 +149,6 @@
                             <li>Differential Equations (MATH 225)</li>
                             <li>Linear Algebra (MATH 332)</li>
                         </ul>
-
                         <p id="progress">*in progress</p>
                     </div>
                 </div>
@@ -166,20 +156,11 @@
 
             <!--Project Section-->
             <section class="container column" id="project-section">
-                <h1 class="subtitle fade-in" id="fade-in-element1">Projects</h1>
-
-                <!--Filter Buttons-->
-				<!-- <div class="container row fade-in" id="button-section">
-					<button class="filter-button active" onclick="filterSelection('all')">All</button>
-					<button class="filter-button" onclick="filterSelection('python')">Python</button> -->
-					<!-- <button class="filter-button" onclick="filterSelection('data')">ML</button>
-					<button class="filter-button" onclick="filterSelection('c++')">C++</button>
-					<button class="filter-button" onclick="filterSelection('web')">Web Dev</button>
-				</div> -->
-
+                <h1 class="subtitle fade-in" id="projects-title">Projects</h1>
+                
                 <!-- Individual Projects  -->
-                <div class="container row" id="project-container"><!-- Make a clickable link on each photo to send to github or where code is stored -->
-                    <div class="each-project data fade-in" id="fade-in-element2">
+                <div class="container row" id="project-container">
+                    <div class="each-project fade-in" id="project-webmd">
                         <img class="proj-img" src="assets\img\project-webmd.png">
                         <div class="proj-description container column">
                             <div class="img-description">
@@ -194,7 +175,7 @@
                         </div>
                     </div>
                     
-                    <div class="each-project c++ fade-in" id="fade-in-element3">
+                    <div class="each-project fade-in" id="project-keyboard">
                         <img class="proj-img" src="assets\img\keyboardTeamInside.JPG">
                         <div class="proj-description container column">
                             <div class="img-description">
@@ -209,7 +190,7 @@
                         </div>
                     </div>
 
-                    <div class="each-project data fade-in" id="fade-in-element4">
+                    <div class="each-project fade-in" id="project-chess">
                         <img class="proj-img" src="assets\img\project-chess.png">
                         <div class="proj-description container column">
                             <div class="img-description">
@@ -225,7 +206,7 @@
                         </div>
                     </div>
 
-                    <div class="each-project data fade-in" id="fade-in-element5">
+                    <div class="each-project fade-in" id="project-svm">
                         <img class="proj-img" src="assets\img\project-svm.png">
                         <div class="proj-description container column">
                             <div class="img-description">
@@ -240,7 +221,7 @@
                         </div>
                     </div>
 
-                    <div class="each-project web fade-in" id="fade-in-element6">
+                    <div class="each-project fade-in" id="project-budgetBuddy">
                         <img class="proj-img" src="assets\img\project-budgetBuddy.jpeg">
                         <div class="proj-description container column">
                             <div class="img-description">
@@ -255,7 +236,7 @@
                         </div>
                     </div>
 
-                    <div class="each-project web fade-in" id="fade-in-element7">
+                    <div class="each-project fade-in" id="project-clueGame">
                         <img class="proj-img" src="assets\img\project-clueGame.png">
                         <div class="proj-description container column">
                             <div class="img-description">
@@ -270,7 +251,7 @@
                         </div>
                     </div>
 
-                    <div class="each-project web fade-in" id="fade-in-element8">
+                    <div class="each-project fade-in" id="project-fti">
                         <img class="proj-img" src="assets\img\project-fti.png">
                         <div class="proj-description container column">
                             <div class="img-description">
@@ -284,7 +265,7 @@
                         </div>
                     </div>
 
-                    <div class="each-project web fade-in" id="fade-in-element9">
+                    <div class="each-project fade-in" id="project-ucs">
                         <img class="proj-img" src="assets\img\project-ucs.png">
                         <div class="proj-description container column">
                             <div class="img-description">
@@ -298,9 +279,8 @@
                             </div>
                         </div>
                     </div>
-                    
 
-                    <div class="each-project web fade-in" id="fade-in-element10">
+                    <div class="each-project fade-in" id="project-portfolio">
                         <img class="proj-img" src="assets\img\project-portfolio.png">
                         <div class="proj-description container column">
                             <div class="img-description">
@@ -316,16 +296,6 @@
                     </div>
                 </div>
             </section>
-
-            <!--Publication Section-->
-            <!-- <section class="container column" id="publication-section">
-
-            </section> -->
-
-            <!--Award Section-->
-            <!-- <section class="container column" id="award-section">
-
-            </section> -->
 
             <!--Footer/Contacts-->
             <section class="container column" id="footer-section">
