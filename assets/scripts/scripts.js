@@ -112,7 +112,7 @@ window.onload = () => {
 // When user scrolls to a certain point, activate fade-in effects for each important page element.
 window.onscroll = function () {
 
-  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  // When the user scrolls down 700px from the top of the document, slide down the navbar
   if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
     document.getElementById("navbar").style.top = "0";
   } else {
@@ -197,3 +197,59 @@ function w3AddClass(element, name) {
     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
   }
 }
+
+// Begin photo transition
+startImageTransition();
+
+// Used to transition each image the to next photo in home page.
+function startImageTransition() {
+    var images = document.getElementsByClassName("home-image");
+
+    for (var i = 0; i < images.length; ++i) {
+        images[i].style.opacity = 1;
+    }
+
+    var top = 1;
+
+    var cur = images.length - 1;
+
+    setInterval(changeImage, 5000);
+
+    async function changeImage() {
+
+        var nextImage = (1 + cur) % images.length;
+
+        images[cur].style.zIndex = top + 1;
+        images[nextImage].style.zIndex = top;
+
+        await transition();
+
+        images[cur].style.zIndex = top;
+
+        images[nextImage].style.zIndex = top + 1;
+
+        top = top + 1;
+
+        images[cur].style.opacity = 1;
+      
+        cur = nextImage;
+
+    }
+
+    function transition() {
+        return new Promise(function(resolve, reject) {
+            var del = 0.01;
+
+            var id = setInterval(changeOpacity, 10);
+
+            function changeOpacity() {
+                images[cur].style.opacity -= del;
+                if (images[cur].style.opacity <= 0) {
+                    clearInterval(id);
+                    resolve();
+                }
+            }
+
+        })
+    }
+  }
