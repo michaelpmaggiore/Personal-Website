@@ -105,7 +105,7 @@ document.getElementById('toHomeSection').addEventListener('click', function (eve
   // Start animation for intro page.
   window.onload = () => {
     var element = document.getElementById("fade-in-element0");
-    animateFadeIn(element, 600);
+    setTimeout(() => { animateFadeIn(element, 600); }, 100);
   }
 
 
