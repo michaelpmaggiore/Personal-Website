@@ -152,7 +152,7 @@ function fadeInElement(elementId, scrollThreshold, zIndex, duration) {
   var element = document.getElementById(elementId);
 
   if ((document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold)) {
-    element.style.zIndex = zIndex + 1;
+    // element.style.zIndex = zIndex + 1;
     animateFadeIn(element, duration);
   }
 }
@@ -186,7 +186,7 @@ function filterSelection(c) {
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    w3AddClass(x[i], "show");
   }
 }
 
@@ -215,16 +215,16 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("button-section");
-var btns = btnContainer.getElementsByClassName("filter-button");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-    console.log(current);
-  });
-}
+// var btnContainer = document.getElementById("button-section");
+// var btns = btnContainer.getElementsByClassName("filter-button");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function(){
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//     console.log(current);
+//   });
+// }
 
 // // Reveals website.
 // window.sr = ScrollReveal({

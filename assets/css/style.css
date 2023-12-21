@@ -236,7 +236,7 @@ a:hover {
 	box-shadow: 12px 12px 1px #bfbfc2;
 	overflow-y:hidden;
 	margin: 40px;
-	margin-top: -41px;
+	margin-top: -20px;
     margin-left: 0px;
 }
 
@@ -256,7 +256,8 @@ a:hover {
     margin-right: 10px;
     margin-left: 0px;
     padding: 30px;
-    padding-top: 60px;
+    padding-top: 0px;
+    margin-top: 50px;
     overflow-y: auto;
     line-height: 22px;
     height: 500px;
@@ -381,6 +382,7 @@ ul {
 	margin: 1%;
     margin-right: 30px;
 	display: none;
+    margin-top: -22px;
     /* margin-bottom: 50px; */
 }
 
@@ -396,8 +398,8 @@ ul {
 
 .proj-description {
 	position: absolute;
-	top: -21px;
-	bottom: 21px;
+	top: 0;
+	bottom: 0;
 	left: 0;
 	right: 0;
 	background: #F8F8F8;
