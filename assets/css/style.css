@@ -236,7 +236,7 @@ a:hover {
 	box-shadow: 12px 12px 1px #bfbfc2;
 	overflow-y:hidden;
 	margin: 40px;
-	margin-top: -20px;
+	margin-top: -41px;
     margin-left: 0px;
 }
 
@@ -396,8 +396,8 @@ ul {
 
 .proj-description {
 	position: absolute;
-	top: 0;
-	bottom: 0;
+	top: -21px;
+	bottom: 21px;
 	left: 0;
 	right: 0;
 	background: #F8F8F8;
