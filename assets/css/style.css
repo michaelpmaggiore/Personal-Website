@@ -131,7 +131,7 @@ a:hover {
     letter-spacing: 2px;
     max-width: 100%;
     font-size: 175%;
-    margin-top: 70px;
+    margin-top: 65px;
     margin-bottom: 20px !important;
 }
 
@@ -337,9 +337,11 @@ ul {
 /* Project Section */
 #project-section {
 	margin: 50px;
+    padding-top: 40px;
 }
 
 #button-section {
+    margin-top: 5px;
 	justify-content: center;
 	align-items: center;
 }
@@ -366,9 +368,9 @@ ul {
 
 .each-project {
 	position: relative;
-	height: 350px;
-	width: 350px;
-	margin: 3%;
+	height: 410px;
+	width: 410px;
+	margin: 1.2%;
 	display: none;
 }
 
@@ -387,8 +389,8 @@ ul {
   }
 
 .proj-img {
-    width: 350px;
-    height: 350px;
+    width: 410px;
+    height: 410px;
     border-radius: 6px;
 }
 
@@ -491,7 +493,7 @@ ul {
 }
 
 /* Fade in transition */
-.fade-in {
+/* .fade-in {
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
@@ -506,6 +508,10 @@ ul {
 	100% {
 		opacity: 1;
 	}
+} */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .test2 {

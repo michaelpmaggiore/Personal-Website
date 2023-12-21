@@ -9,7 +9,7 @@ var typewriter = new Typewriter(app, {
     deleteSpeed:5
 });
 
-typewriter.typeString('Hey there!') // Maybe capitalize the sentences?!
+typewriter.typeString('Hey there!')
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
@@ -17,7 +17,7 @@ typewriter.typeString('Hey there!') // Maybe capitalize the sentences?!
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("My name is Michael")
+    .typeString('My name is Michael')
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
@@ -50,33 +50,131 @@ typewriter.typeString('Hey there!') // Maybe capitalize the sentences?!
     .deleteAll()
     .start();
 
-// When the user scrolls down 20px from the top of the document, slide down the navbar
-window.onscroll = function() {scrollFunction()};
+document.getElementById('toHomeSection').addEventListener('click', function (event) {
+  typewriter.stop();
+  typewriter = null;
 
+  // Create a new typewriter instance
+  typewriter = new Typewriter(app, {
+      loop: true,
+      delay: 50,
+      deleteSpeed: 5
+  });
+  typewriter.typeString("Thanks for visiting!")
+  .pauseFor(1000)
+  .deleteAll()
+  .pauseFor(500)
+  .typeString('Hey there!')
+  .pauseFor(1000)
+  .deleteAll()
+  .pauseFor(500)
+  .typeString('Nice to meet you')
+  .pauseFor(1000)
+  .deleteAll()
+  .pauseFor(500)
+  .typeString('My name is Michael')
+  .pauseFor(1000)
+  .deleteAll()
+  .pauseFor(500)
+  .typeString("I'm a student at Colorado School of Mines (sko digs!)")
+  .pauseFor(1000)
+  .deleteAll()
+  .pauseFor(500)
+  .typeString("I'm studying computer science")
+  .pauseFor(1000)
+  .deleteAll()
+  .pauseFor(500)
+  .typeString("I'm interested in DevOps and Full-Stack development")
+  .pauseFor(1000)
+  .deleteAll()
+  .pauseFor(500)
+  .typeString("I also enjoy software engineering!")
+  .pauseFor(1000)
+  .deleteAll()
+  .pauseFor(500)
+  .typeString("Huge fan of star wars")
+  .pauseFor(1000)
+  .deleteAll()
+  .pauseFor(500)
+  .typeString("waterpolo > competitive swimming")
+  .pauseFor(1000)
+  .deleteAll()
+  .start();
+})
+
+  // Start animation for intro page.
+  window.onload = () => {
+    var element = document.getElementById("fade-in-element0");
+    setTimeout(() => { animateFadeIn(element, 600); }, 100);
+  }
+
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-70px";
+    }
+
+    scrollFunction();
+  };
+
+// When the user scrolls down 20px from the top of the document, slide down the navbar
 function scrollFunction() {
-  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-70px";
+  fadeInElement("about-section-description", 700, 0, 200);
+  fadeInElement("fade-in-element0.5", 700, 0, 400);
+  fadeInElement("fade-in-element0.7", 700, 0, 200);
+
+  fadeInElement("fade-in-element2.1", 1400, 0, 200);
+  fadeInElement("fade-in-element2.2", 1400, 0, 400);
+  fadeInElement("school", 1400, 0, 400);
+  fadeInElement("coursework", 1400, 0, 600);
+
+  fadeInElement("fade-in-element1", 2500, 1, 200);
+  fadeInElement("button-section", 2500, 2, 200);
+
+  fadeInElement("fade-in-element2", 2800, 3, 200);
+  fadeInElement("fade-in-element3", 2800, 3, 400);
+  fadeInElement("fade-in-element4", 2800, 3, 600);
+
+  fadeInElement("fade-in-element5", 3100, 3, 800);
+  fadeInElement("fade-in-element6", 3100, 3, 1000);
+  fadeInElement("fade-in-element7", 3100, 3, 1200);
+
+  fadeInElement("fade-in-element8", 3300, 3, 1200);
+  fadeInElement("fade-in-element9", 3300, 3, 1400);
+  fadeInElement("fade-in-element10", 3300, 3, 1600);
+
+
+}
+
+function fadeInElement(elementId, scrollThreshold, zIndex, duration) {
+  var element = document.getElementById(elementId);
+
+  if ((document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold)) {
+    element.style.zIndex = zIndex + 1;
+    animateFadeIn(element, duration);
   }
 }
 
-// var app = document.getElementById('app');
+function animateFadeIn(element, duration) {
+  var startTime = null;
+  var startOpacity = parseFloat(element.style.opacity) || 0;
+  function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var progress = timestamp - startTime;
+      var opacity = startOpacity + (progress / duration);
 
-// var typewriter = new Typewriter(app, {
-//   loop: true,
-//   delay: 75,
-// });
+      element.style.opacity = opacity;
 
-// typewriter
-//   .pauseFor(2500)
-//   .typeString('A simple yet powerful native javascript')
-//   .pauseFor(300)
-//   .deleteChars(10)
-//   .typeString('<strong>JS</strong> plugin for a cool typewriter effect and ')
-//   .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
-//   .pauseFor(1000)
-//   .start();
+      if (progress <= duration) {
+          requestAnimationFrame(step);
+      }
+  }
+
+  requestAnimationFrame(step);
+}
+
 
 //filter buttons 
 //source : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements
@@ -100,7 +198,6 @@ function w3AddClass(element, name) {
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
-    console.log(element.className, arr2[i]);
     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
   }
 }

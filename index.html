@@ -15,7 +15,7 @@
         <!--CSS-->
         <link rel="stylesheet" href = "assets/css/style.css">
         <!--Think about adding my own icon to website-->
-        <link rel="icon" href="assets/img/newSpecialLogo.png">
+        <link rel="icon" href="assets/img/DSC02845smaller2.png">
         <link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
@@ -31,7 +31,7 @@
 
         <!--Navigation Bar-->
         <div id="navbar">
-            <a href="#home-section" class="navbar-item">Michael Maggiore</a> <!--Test between lower case and upper case combinations-->
+            <a href="#home-section" class="navbar-item" id="toHomeSection">Michael Maggiore</a> <!--Test between lower case and upper case combinations-->
             <a class="navbar-item contactSpacing" href="/Resume/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             <a href="#footer-section" class="navbar-item">Contact</a>
             <!-- <a href="#award-section" class="navbar-item">Awards</a> -->
@@ -47,23 +47,19 @@
             <!--Home Page-->
             <section id="home-section">
 
-                <div class="container row">
+                <div class="container row fade-in" id="fade-in-element0">
 
                     <div class="container row" id="landing-container">
                         <div class="test2" id="about-img-left">
                             <img src="assets\img\photo of me.jpg" id=""  class="test" alt="Photo">            
                             <img src="assets\img\IMG_7560.JPG" id=""  class="test" alt="Photo">
                             <img src="assets\img\ascend.JPG" id=""  class="test" alt="Photo">
-                            <img src="assets\img\IMG_20230703_121408817_HDR_Original.JPG" id=""  class="test" alt="Photo"> 
+                            <img src="assets\img\Resized_20230721_143329.jpeg" id=""  class="test" alt="Photo"> 
                             <img src="assets\img\IMG_5690.JPG" id=""  class="test" alt="Photo">                                               
                             <img src="assets\img\outsideteamphoto.png" id=""  class="test" alt="Photo">            
 
                         </div>  
                         <div class="container column" id="landing-text">
-                            <!-- <img src="assets/img/photoofmyself.jpg" id="profile-icon" alt="Profile Picture"> -->
-
-
-
                             <h1 class="title">Michael Maggiore</h1>
                             <p id="app"></p>
                         </div>
@@ -75,12 +71,12 @@
 
             <!--About Section-->
             <section class="container column" id="about-section"> 
-                <h1 class="subtitle2">About Me</h1>
+                <h1 class="subtitle fade-in" id="fade-in-element0.5">About Me</h1>
 
                 <section class="container row" id="about-section2">
     
-                    <div id="about-section-description">
-                        <P>
+                    <div id="about-section-description" class="fade-in">
+                        <p>
                             Hello! My name is Michael and I love building software that has a real impact on the world. My interest in programming began from my very first "Hello, World!" and continues to grow as I begin to build new web applications and programs that push the boundaries of creativity.
                         </P>
                         <p class="break-margin">
@@ -89,7 +85,7 @@
                             Fast-forward to today, I've had the privilege of working on many jobs and projects from researching new ways to safeguard IoT data to developing and deploying exciting programs on company apps.
                         </p>
                     </div>
-                    <div class="each-project2">
+                    <div class="each-project2 fade-in" id="fade-in-element0.7">
                         <img src="assets/img/DSC02701SMALL.JPG" id="about-img" alt="Profile Picture"> 
                         <div class="proj-description container column">
                             <div class="img-description">
@@ -112,13 +108,13 @@
                 
             
 
-            <!--Education Sectiion-->
+            <!--Education Section-->
             <section class="container column parallax" id="education-section">
-                <div class="container column" id="text">
-                    <h1 class="subtitle">Education</h1>
+                <div class="container column">
+                    <h1 class="subtitle fade-in" id="fade-in-element2.1">Education</h1>
                     <div class="container row" id="education-title">
-                        <img src="assets\img\Colorado_School_of_Mines_seal.svg.png">
-                        <div class="container column" id="school">
+                        <img class="fade-in" id="fade-in-element2.2" src="assets\img\Colorado_School_of_Mines_seal.svg.png">
+                        <div class="container column fade-in" id="school">
                             <h2>Colorado School of Mines</h2>
                             <h3>Master of Science - Computer Science, Non-Thesis</h3>
                             <p>Expected Master's Graduation: May 2025</p>
@@ -126,7 +122,7 @@
                             <p>Expected Bachelor's Graduation: May 2024</p>
                         </div>
                     </div>
-                    <div class="container column" id="coursework">
+                    <div class="container column fade-in" id="coursework">
                         <h4>Relevant Coursework:</h4>
                         <p>Computer Science</p>
                         <ul>
@@ -163,10 +159,10 @@
 
             <!--Project Section-->
             <section class="container column" id="project-section">
-                <h1 class="subtitle">Projects</h1>
+                <h1 class="subtitle fade-in" id="fade-in-element1">Projects</h1>
 
                 <!--Filter Buttons-->
-				<div class="container row" id="button-section">
+				<div class="container row fade-in" id="button-section">
 					<button class="filter-button active" onclick="filterSelection('all')">All</button>
 					<!-- <button class="filter-button" onclick="filterSelection('python')">Python</button> -->
 					<button class="filter-button" onclick="filterSelection('data')">ML</button>
@@ -176,7 +172,52 @@
 
                 <!-- Individual Projects  -->
                 <div class="container row" id="project-container"><!-- Make a clickable link on each photo to send to github or where code is stored -->
-                    <div class="each-project data">
+                    <div class="each-project data fade-in" id="fade-in-element2">
+                        <img class="proj-img" src="assets\img\Screenshot 2023-12-19 222857.png">
+                        <div class="proj-description container column">
+                            <div class="img-description">
+                                <h2>Web M.D+</h2>
+                                <p>
+                                    Developed a medical app that enables users to pinpoint their existing illness based on specific symptoms they are experiencing.
+                                </p>
+                                <br>
+                                <br>
+                                <i>Python, sklearn / PostgreSQL</i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="each-project c++ fade-in" id="fade-in-element3">
+                        <img class="proj-img" src="assets\img\IMG_6213.JPG">
+                        <div class="proj-description container column">
+                            <div class="img-description">
+                                <h2>Hot-Swap Keyboard</h2>
+                                <p>
+                                    Fabricated an assistive mechanical keyboard for the elderly. It is a ready-to-market device with unique features to improve the use of a computer.
+                                </p>
+                                <br>
+                                <br>
+                                <i>C++</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each-project data fade-in" id="fade-in-element4">
+                        <img class="proj-img" src="assets\img\Screenshot 2023-12-19 191931.png">
+                        <div class="proj-description container column">
+                            <div class="img-description">
+                                <h2>Chess</h2>
+                                <p>
+                                    Developed a medical app that enables users to pinpoint their existing illness based on specific symptoms they are experiencing.
+                                </p>
+                                <br>
+                                <br>
+                                <i>Python, sklearn / PostgreSQL</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each-project data fade-in" id="fade-in-element5">
                         <img class="proj-img" src="assets\img\StocksPhoto3.png">
                         <div class="proj-description container column">
                             <div class="img-description">
@@ -190,21 +231,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="each-project c++">
-                        <img class="proj-img" src="assets\img\outsideteamphoto.png">
-                        <div class="proj-description container column">
-                            <div class="img-description">
-                                <h2>Hot-Swap Keyboard</h2>
-                                <p>
-                                    Fabricated an assistive mechanical keyboard for the elderly. It is a ready-to-market device with unique features to improve the use of a computer.
-                                </p>
-                                <br>
-                                <br>
-                                <i>C++</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="each-project web">
+
+                    <div class="each-project web fade-in" id="fade-in-element6">
                         <img class="proj-img" src="assets\img\Budget_Buddy.jpeg">
                         <div class="proj-description container column">
                             <div class="img-description">
@@ -219,8 +247,38 @@
                         </div>
                     </div>
 
-                    <div class="each-project web">
-                        <img class="proj-img" src="assets\img\newSpecialLogo2.png">
+                    <div class="each-project web fade-in" id="fade-in-element7">
+                        <img class="proj-img" src="assets\img\Screenshot 2023-12-19 230205.png">
+                        <div class="proj-description container column">
+                            <div class="img-description">
+                                <h2>Clue Game</h2>
+                                <p>
+                                    Designed my personal website to be interactive and responsive using HTML, CSS, and JavaScript.
+                                </p>
+                                <br>
+                                <br>
+                                <i>HTML / CSS / JavaScript</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each-project web fade-in" id="fade-in-element8">
+                        <img class="proj-img" src="assets\img\Screenshot 2023-12-19 232832.png">
+                        <div class="proj-description container column">
+                            <div class="img-description">
+                                <h2>FTI's Blue Team Virtualized Data Communication Networks</h2>
+                                <p>
+                                    Designed my personal website to be interactive and responsive using HTML, CSS, and JavaScript.
+                                </p>
+                                <br>
+                                <br>
+                                <i>HTML / CSS / JavaScript</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each-project web fade-in" id="fade-in-element9">
+                        <img class="proj-img" src="assets\img\uniform_cost.png">
                         <div class="proj-description container column">
                             <div class="img-description">
                                 <h2>Portfolio Website</h2>
@@ -233,18 +291,19 @@
                             </div>
                         </div>
                     </div>
+                    
 
-                    <div class="each-project data">
-                        <img class="proj-img" src="assets\img\decisionTreeLayout2.png">
+                    <div class="each-project web fade-in" id="fade-in-element10">
+                        <img class="proj-img" src="assets\img\Screenshot 2023-12-20 021258.png">
                         <div class="proj-description container column">
                             <div class="img-description">
-                                <h2>Web M.D+</h2>
+                                <h2>Portfolio Website</h2>
                                 <p>
-                                    Developed a medical app that enables users to pinpoint their existing illness based on specific symptoms they are experiencing.
+                                    Designed my personal website to be interactive and responsive using HTML, CSS, and JavaScript.
                                 </p>
                                 <br>
                                 <br>
-                                <i>Python, sklearn / PostgreSQL</i>
+                                <i>HTML / CSS / JavaScript</i>
                             </div>
                         </div>
                     </div>
@@ -267,6 +326,8 @@
                     <a href="https://www.linkedin.com/in/michaelpmaggiore/" target="_blank">LinkedIn</a>
 					<span>•</span>
                     <a href="https://github.com/michaelpmaggiore" target="_blank">Github</a>
+					<span>•</span>
+                    <a href="https://www.instagram.com/_michael.maggiore_/" target="_blank">Instagram</a>
 					<span>•</span>
                     <a href="mailto:michaelpmaggiore@gmail.com" target="_blank">Email</a>
                 </div>
