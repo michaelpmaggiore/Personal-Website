@@ -124,31 +124,88 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
+    if (window.innerWidth >= 1426) {
+      // Handles About page
+      fadeInElement("about-desc", 500, 200);
+      fadeInElement("about-title", 500, 400);
+      fadeInElement("about-image-container", 500, 200);
 
-  // Handles About page
-  fadeInElement("about-desc", 700, 200);
-  fadeInElement("about-title", 700, 400);
-  fadeInElement("about-image-container", 700, 200);
+      // Handles Education page
+      fadeInElement("education-title", 1400, 200);
+      fadeInElement("education-college-container", 1400, 400);
+      fadeInElement("coursework", 1400, 600);
 
-  // Handles Education page
-  fadeInElement("education-title", 1400, 200);
-  fadeInElement("education-college-container", 1400, 400);
-  fadeInElement("coursework", 1400, 600);
+      // Handles Projects page
+      fadeInElement("projects-title", 2300, 200);
 
-  // Handles Projects page
-  fadeInElement("projects-title", 2500, 200);
+      fadeInElement("project-webmd", 2600, 200);
+      fadeInElement("project-keyboard", 2600, 400);
+      fadeInElement("project-chess", 2600, 600);
 
-  fadeInElement("project-webmd", 2800, 200);
-  fadeInElement("project-keyboard", 2800, 400);
-  fadeInElement("project-chess", 2800, 600);
+      fadeInElement("project-svm", 3010, 800);
+      fadeInElement("project-budgetBuddy", 3010, 1000);
+      fadeInElement("project-clueGame", 3010, 1200);
 
-  fadeInElement("project-svm", 3100, 800);
-  fadeInElement("project-budgetBuddy", 3100, 1000);
-  fadeInElement("project-clueGame", 3100, 1200);
+      fadeInElement("project-fti", 3300, 800);
+      fadeInElement("project-ucs", 3300, 1000);
+      fadeInElement("project-portfolio", 3300, 1200);
 
-  fadeInElement("project-fti", 3400, 800);
-  fadeInElement("project-ucs", 3400, 1000);
-  fadeInElement("project-portfolio", 3400, 1200);
+  } else if (window.innerWidth < 1426 && window.innerWidth >= 962){
+      // Handles About page
+      fadeInElement("about-desc", 450, 200);
+      fadeInElement("about-title", 450, 400);
+      fadeInElement("about-image-container", 450, 200);
+
+      // Handles Education page
+      fadeInElement("education-title", 1300, 200);
+      fadeInElement("education-college-container", 1300, 400);
+      fadeInElement("coursework", 1300, 600);
+
+      // Handles Projects page
+      fadeInElement("projects-title", 2500, 200);
+
+      fadeInElement("project-webmd", 2600, 200);
+      fadeInElement("project-keyboard", 2600, 400);
+
+      fadeInElement("project-chess", 3000, 600);
+      fadeInElement("project-svm", 3000, 800);
+
+      fadeInElement("project-budgetBuddy", 3400, 200);
+      fadeInElement("project-clueGame", 3400, 400);
+
+      fadeInElement("project-fti", 3700, 200);
+      fadeInElement("project-ucs", 3700, 400);
+
+      fadeInElement("project-portfolio", 4400, 200);
+
+  } else if (window.innerWidth < 962 && window.innerWidth >= 0){
+      // Handles About page
+      fadeInElement("about-desc", 450, 200);
+      fadeInElement("about-title", 450, 400);
+      fadeInElement("about-image-container", 450, 200);
+
+      // Handles Education page
+      fadeInElement("education-title", 1300, 200);
+      fadeInElement("education-college-container", 1300, 400);
+      fadeInElement("coursework", 1300, 600);
+
+      // Handles Projects page
+      fadeInElement("projects-title", 2500, 200);
+
+      fadeInElement("project-webmd", 2600, 200);
+      fadeInElement("project-keyboard", 2600, 400);
+
+      fadeInElement("project-chess", 3000, 600);
+      fadeInElement("project-svm", 3000, 800);
+
+      fadeInElement("project-budgetBuddy", 3400, 200);
+      fadeInElement("project-clueGame", 3400, 400);
+
+      fadeInElement("project-fti", 3700, 200);
+      fadeInElement("project-ucs", 3700, 400);
+
+      fadeInElement("project-portfolio", 4400, 200);
+  }
 }
 
 // Logic to determine scroll threshold for fade-ins
