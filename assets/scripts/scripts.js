@@ -201,6 +201,7 @@ function w3AddClass(element, name) {
 
 // Logic for photo transition
 var imageTransitionInterval;
+var inactiveFlag = false;
 
 function startImageTransition() {
     clearInterval(imageTransitionInterval); // Clear any existing intervals
@@ -217,6 +218,7 @@ function startImageTransition() {
     imageTransitionInterval = setInterval(changeImage, 5000);
 
     async function changeImage() {
+      if (inactiveFlag == false){
         var nextImage = (1 + cur) % images.length;
 
         images[cur].style.zIndex = top + 1;
@@ -225,11 +227,16 @@ function startImageTransition() {
         await transition();
 
         images[cur].style.zIndex = top;
+
         images[nextImage].style.zIndex = top + 1;
 
         top = top + 1;
+
         images[cur].style.opacity = 1;
+      
         cur = nextImage;
+      }
+
     }
 
     function transition() {
@@ -251,8 +258,8 @@ function startImageTransition() {
 // Pause the image transition when the page is not visible
 document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === 'hidden') {
-        clearInterval(imageTransitionInterval);
+      inactiveFlag = true;
     } else {
-        startImageTransition();
+      inactiveFlag = false;
     }
 });
