@@ -9,6 +9,7 @@ body, html{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    min-width: 830px;
 }
 
 h1 {
@@ -275,7 +276,6 @@ p {
 /* Education Section */
 #education-section {
     padding: 50px;
-    /* width: 140%; */
     padding-bottom: 80px;
     min-height: 100vh;
     background-color: #474d5a;
@@ -444,4 +444,27 @@ a {
 
 a:hover {
 	color: #8d8d8d;
+}
+
+/* Different styles for different screens */
+@media only screen and (max-width: 1340px) {
+    .home-image-container {
+        height: 500px;
+        width: 500px;
+    }
+  }
+  
+@media only screen and (max-width: 1154px) {
+    #landing-container {
+        padding-right: 0%;
+        padding-left: 2%;
+    }
+
+    .home-image-container {
+        margin: 0px;
+    }
+
+    #home-section {
+        width: 100%;
+    }
 }
