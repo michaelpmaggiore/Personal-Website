@@ -460,11 +460,6 @@ a:hover {
         padding-left: 2%;
     }
 
-    .home-image-container {
-        margin: 0px;
-        margin-top: 50px;
-    }
-
     #home-section {
         width: 100%;
     }
@@ -475,11 +470,23 @@ a:hover {
     }
 
     #arrow {
-        margin-top: 0px
+        margin-top: 100px
     }
 
     #app {
         margin-bottom: 5%;
+    }
+
+    #about-desc {
+        margin-right: 0px;
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 1189px) {
+    .home-image-container {
+        margin: 0px;
+        margin-top: 50px;
     }
 }
 
@@ -490,6 +497,8 @@ a:hover {
 
     #about-desc {
         white-space: normal;
+        font-size: 17px;
+        min-width: 289px;
     }
 
     .about-image-container {
@@ -525,6 +534,15 @@ a:hover {
 
     #landing-container {
         margin-top: 39px;
+    }
+
+    #project-section {
+        margin: 0px;
+        padding-top: 0px;
+    }
+
+    #education-section {
+        padding-top: 0px;
     }
 
 }
