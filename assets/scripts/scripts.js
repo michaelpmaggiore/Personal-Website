@@ -272,7 +272,7 @@ function startImageTransition() {
     var top = 1;
     var cur = images.length - 1;
 
-    imageTransitionInterval = setInterval(changeImage, 5000);
+    imageTransitionInterval = setInterval(changeImage, 7000);
 
     async function changeImage() {
       if (inactiveFlag == false){
