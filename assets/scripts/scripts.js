@@ -124,7 +124,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-    if (window.innerWidth >= 1426) {
+  if (window.innerWidth >= 1426) {
       // Handles About page
       fadeInElement("about-desc", 500, 200);
       fadeInElement("about-title", 500, 400);
