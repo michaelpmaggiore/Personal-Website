@@ -124,6 +124,32 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
+  if (window.innerHeight < 500){
+      // Handles About page
+      fadeInElement("about-desc", 0, 200);
+      fadeInElement("about-title", 0, 400);
+      fadeInElement("about-image-container", 0, 200);
+
+      // Handles Education page
+      fadeInElement("education-title", 0, 200);
+      fadeInElement("education-college-container", 0, 400);
+      fadeInElement("coursework", 0, 600);
+
+      // Handles Projects page
+      fadeInElement("projects-title", 0, 200);
+
+      fadeInElement("project-webmd", 0, 200);
+      fadeInElement("project-keyboard", 0, 400);
+      fadeInElement("project-chess", 0, 600);
+
+      fadeInElement("project-svm", 0, 800);
+      fadeInElement("project-budgetBuddy", 0, 1000);
+      fadeInElement("project-clueGame", 0, 1200);
+
+      fadeInElement("project-fti", 0, 800);
+      fadeInElement("project-ucs", 0, 1000);
+      fadeInElement("project-portfolio", 0, 1200);
+  }
   if (window.innerWidth >= 1426) {
       // Handles About page
       fadeInElement("about-desc", 500, 200);
