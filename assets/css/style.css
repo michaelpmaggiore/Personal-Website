@@ -446,7 +446,7 @@ a:hover {
 	color: #8d8d8d;
 }
 
-/* Different styles for different screens */
+/* Different styles for different screen sizes */
 @media only screen and (max-width: 1340px) {
     .home-image-container {
         height: 500px;
