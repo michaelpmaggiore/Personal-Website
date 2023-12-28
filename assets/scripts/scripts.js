@@ -108,6 +108,7 @@ window.onload = () => {
   startImageTransition();
   var element = document.getElementById("home-fade");
   setTimeout(() => { animateFadeIn(element, 600); }, 100);
+  scrollFunction();
 }
 
 // When user scrolls to a certain point, activate fade-in effects for each important page element.
