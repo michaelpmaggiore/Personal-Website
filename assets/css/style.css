@@ -155,7 +155,7 @@ p {
 }
 
 #landing-container {
-    padding-right: 4%;
+    padding-right: 55px;
 }
 
 #landing-text {
@@ -547,7 +547,7 @@ a:hover {
 
 }
 
-@media only screen and (max-height: 900px){
+@media only screen and (max-height: 600px){
     #navbar {
         display: none;
     }
