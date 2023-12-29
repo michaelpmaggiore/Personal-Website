@@ -568,7 +568,7 @@ a:hover {
     }
 }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 600px) {
     #navbar {
         display: none;
     }
