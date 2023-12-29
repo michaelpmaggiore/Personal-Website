@@ -543,8 +543,25 @@ a:hover {
 
     #education-section {
         padding-top: 0px;
+        font-size: 70%;
     }
 
+    #education-college-container img {
+        margin-top: 0px;
+    }
+
+    #school h2 {
+        font-size: 23px;
+    }
+
+    .img-description p, .img-description i{
+        font-size: 90%;
+        padding-bottom: 15px;
+    }
+
+    .img-description br{
+        display: none;
+    }
 }
 
 @media only screen and (max-height: 600px){
@@ -603,7 +620,6 @@ a:hover {
     #education-section {
         padding-top: 0px;
     }
-
 }
 
 @media only screen and (max-height: 300px){
