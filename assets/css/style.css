@@ -568,64 +568,6 @@ a:hover {
     }
 }
 
-@media only screen and (max-height: 600px) {
-    #navbar {
-        display: none;
-    }
-
-    #about-desc {
-        white-space: normal;
-        font-size: 17px;
-        min-width: 289px;
-    }
-
-    .about-image-container {
-        width: 320px;
-        height: 320px;
-    }
-
-    .each-project {
-        width: 320px;
-        height: 320px;
-    }
-
-    .home-image-container {
-        height: 320px;
-        width: 320px;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        margin-right: 10px;
-    }
-
-    .title {
-        font-size: 170%;
-    }
-
-    #app {
-        margin-bottom: 70px;
-        display:inline-block;
-        font-size: 100%;
-    }
-
-    #arrow {
-        margin-top: 23px;
-        padding: 8px;
-    }
-
-    #landing-container {
-        margin-top: 39px;
-    }
-
-    #project-section {
-        margin: 0px;
-        padding-top: 0px;
-    }
-
-    #education-section {
-        padding-top: 0px;
-    }
-}
-
 @media only screen and (max-height: 500px){
     .home-image-container {
         height: 220px;
