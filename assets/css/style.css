@@ -481,6 +481,19 @@ a:hover {
         margin-right: 0px;
         padding-left: 40px;
     }
+
+    .img-description p, .img-description i{
+        font-size: 90%;
+        padding-bottom: 15px;
+    }
+
+    .img-description p2, .img-description h5{
+        font-size: 120%;
+    }
+
+    .img-description br{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1189px) {
@@ -553,22 +566,9 @@ a:hover {
     #school h2 {
         font-size: 23px;
     }
-
-    .img-description p, .img-description i{
-        font-size: 90%;
-        padding-bottom: 15px;
-    }
-
-    .img-description p2, .img-description h5{
-        font-size: 120%;
-    }
-
-    .img-description br{
-        display: none;
-    }
 }
 
-@media only screen and (max-height: 900px){
+@media only screen and (max-height: 900px) {
     #navbar {
         display: none;
     }
