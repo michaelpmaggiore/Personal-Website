@@ -559,6 +559,10 @@ a:hover {
         padding-bottom: 15px;
     }
 
+    .img-description p2, .img-description h5{
+        font-size: 120%;
+    }
+
     .img-description br{
         display: none;
     }
