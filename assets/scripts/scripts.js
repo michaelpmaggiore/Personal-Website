@@ -324,7 +324,7 @@ function startImageTransition() {
     }
 
     function transition() {
-        return new Promise(function (resolve, reject) {
+        return new Promise(function (resolve) {
             var del = 0.01;
             var id = setInterval(changeOpacity, 10);
 
